@@ -19,6 +19,15 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
     count +=1;
     displayArea(count, name, rectangleAreaDisplay);
 });
+document.getElementById('parallelogram-btn').addEventListener('click', function () {
+    const name = 'Parallelogram';
+    const parallelogramBase = getInputValueById('parallelogram-base');
+    const parallelogramHeight = getInputValueById('parallelogram-height');
+    const parallelogramArea = parallelogramBase * parallelogramHeight;
+    const parallelogramDisplayArea = parallelogramArea;
+    count +=1;
+    displayArea(count, name, parallelogramDisplayArea);
+});
 
 function displayArea(serialNo, name, totalArea) {
 
