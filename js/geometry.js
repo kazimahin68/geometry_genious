@@ -28,6 +28,15 @@ document.getElementById('parallelogram-btn').addEventListener('click', function 
     count +=1;
     displayArea(count, name, parallelogramDisplayArea);
 });
+document.getElementById('rhombus-btn').addEventListener('click', function () {
+    const name = 'Rhombus';
+    const rhombusDiagonalsOne = getInputValueById('rhombus-diagonals-one');
+    const rhombusDiagonalsTwo = getInputValueById('rhombus-diagonals-two');
+    const rhombusArea = 0.5 * rhombusDiagonalsOne * rhombusDiagonalsTwo;
+    const rhombusAreaDisplay = rhombusArea;
+    count +=1;
+    displayArea(count, name, rhombusAreaDisplay);
+});
 
 function displayArea(serialNo, name, totalArea) {
 
