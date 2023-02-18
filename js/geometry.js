@@ -37,6 +37,15 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
     count +=1;
     displayArea(count, name, rhombusAreaDisplay);
 });
+document.getElementById('pentagon-btn').addEventListener('click', function () {
+    const name = 'Pentagon';
+    const pentagonSide = getInputValueById('pentagon-side');
+    const pentagonApothem = getInputValueById('pentagon-apothem');
+    const pentagonArea = 0.5 * pentagonSide * pentagonApothem;
+    const pentagonAreaDisplay = pentagonArea;
+    count +=1;
+    displayArea(count, name, pentagonAreaDisplay);
+});
 
 function displayArea(serialNo, name, totalArea) {
 
