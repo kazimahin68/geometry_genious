@@ -1,18 +1,18 @@
-function getInputValueById(elementId){
+
+const elements = document.querySelectorAll('.ga-background-color');
+
+function changeColor(event) {
+  event.target.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+}
+
+elements.forEach(element => {
+  element.addEventListener('mouseenter', changeColor);
+});
+
+function getInputValueById(elementId) {
     const element = document.getElementById(elementId);
     const elementValueString = element.value;
     const value = parseFloat(elementValueString);
     element.value = '';
     return value;
-}
-
-
-function buttonCommon() {
-    const displayRow = document.getElementById('area-display');
-    const button = document.createElement("button");
-    button.innerText = 'Convert to m2';
-    button.classList.add('btn-primary');
-    button.classList.add('btn');
-    displayRow.appendChild(button);
-    return button;
 }
