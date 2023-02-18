@@ -75,9 +75,9 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body overflow-hidden">
                         <h5 class="card-title text-decoration-underline text-center">Area Calculation</h5>
-                        <table id="area-display" class="table ga-table">
+                        <table id="area-display" class="table ga-table fs-6">
 
                         </table>
                     </div>
@@ -93,9 +93,9 @@
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <input id="rhombus-diagonals-one" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
-                            placeholder="b">cm
+                            placeholder="d1">cm
                         <input id="rhombus-diagonals-two" class="bg-dark-subtle border border-0 rounded-1 w-25 ms-2 me-1 ps-2" type="text"
-                            placeholder="h">cm
+                            placeholder="d2">cm
                     </div>
                     <button id="rhombus-btn" class="btn btn-primary mt-5 fw-semibold">Calculate</button>
                 </div>
@@ -109,11 +109,27 @@
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <input id="pentagon-side" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
-                            placeholder="b">cm
+                            placeholder="p">cm
                         <input id="pentagon-apothem" class="bg-dark-subtle border border-0 rounded-1 w-25 ms-2 me-1 ps-2" type="text"
-                            placeholder="h">cm
+                            placeholder="b">cm
                     </div>
                     <button id="pentagon-btn" class="btn btn-primary mt-5 fw-semibold">Calculate</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center p-5 h-100">
+                    <img src="images/ellipse.png" class="card-img-top w-75 m-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ellipse</h5>
+                        <p class="card-text">Area (A) = &pi;ab</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <input id="ellipse-a" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
+                            placeholder="a">cm
+                        <input id="ellipse-a" class="bg-dark-subtle border border-0 rounded-1 w-25 ms-2 me-1 ps-2" type="text"
+                            placeholder="b">cm
+                    </div>
+                    <button id="ellipse-btn" class="btn btn-primary mt-5 fw-semibold">Calculate</button>
                 </div>
             </div>
         </div>
