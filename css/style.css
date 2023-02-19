@@ -6,3 +6,7 @@
 .ga-table tr td{
     white-space: nowrap;
 }
+
+.ga-table sup{
+    padding: 0;
+}

@@ -1,3 +1,6 @@
+document.getElementById('blogs-btn').addEventListener('click', function(){
+    window.location.href = 'blogs.html';
+});
 
 let count = 0;
 
@@ -97,7 +100,7 @@ document.getElementById('ellipse-btn').addEventListener('click', function () {
         window.alert("Please Input Number Value");
     }
     else{
-        const ellipseArea = 'π' * ellipseA * ellipseB;
+        const ellipseArea = 3.1416 * ellipseA * ellipseB;
         const ellipseAreaDisplay = ellipseArea.toFixed(2);
         count += 1;
         displayArea(count, name, ellipseAreaDisplay);
@@ -110,7 +113,7 @@ function displayArea(serialNo, name, totalArea) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
         <td>${serialNo}. </td>
-        <td>${name} </td>
+        <td> ${name} </td>
         <td>${totalArea} cm<sup>2</sup></td>
         <td><button class="btn btn-primary">
         Convert to m<sup>2</sup></button></td>
