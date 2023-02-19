@@ -8,10 +8,7 @@ document.getElementById('triangle-btn').addEventListener('click', function () {
     const name = 'Triangle';
     const triangleBase = getInputValueById('triangle-base');
     const triangleHeight = getInputValueById('triangle-height');
-    if (triangleBase === ' ' || triangleBase === ' ') {
-        window.alert("Please Input Value");
-    }
-    else if (isNaN(triangleBase) || isNaN(triangleHeight)) {
+    if (isNaN(triangleBase) || isNaN(triangleHeight)) {
         window.alert("Please Input Number Value");
     }
     else {

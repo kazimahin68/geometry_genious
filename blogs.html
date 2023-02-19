@@ -8,6 +8,12 @@
     <title>Blogs</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        #bubble-form * {
+            margin: 10px;
+            border: 1px solid blue;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,7 +49,7 @@
                     documents using the DOM.</p>
             </div>
         </section>
-        <section class="border border-0 rounded bg-secondary-subtle p-5">
+        <section class="border border-0 rounded bg-secondary-subtle p-5 mb-5">
             <h2 class="fw-bold">How will you select HTML elements using DOM? Name the DOM methods.</h2>
             <div>
                 <h4 class="fw-semibold">Select HTML elements using DOM :</h4>
@@ -70,10 +76,38 @@
                         <li class="col">removeChild()</li>
                         <li class="col">getAttribute()</li>
                         <li class="col">setAttribute()</li>
-                        <li class="col">document.forms</li>
-                        <li class="col">innerHTML</li>
                     </ol>
                 </table>
+            </div>
+        </section>
+        <section class="border border-0 rounded bg-secondary-subtle p-5 mb-5">
+            <h2 class="fw-bold">What is event bubble?</h2>
+            <div>
+                <h4 class="fw-semibold">Event Bubble :</h4>
+                <p>Event bubbling is a type of DOM event propagation where the event first triggers on the innermost
+                    target element, and then successively triggers on the ancestors (parents) of the target element in
+                    the same nesting hierarchy till it reaches the outermost DOM element or document object (Provided
+                    the handler is initialized). It is one way that events are handled in the browser. Events are
+                    actions done by the user such as a button click, changing a field etc. Event Handlers are used to
+                    execute code when a particular kind of user interface event occurs, such as when a button has been
+                    clicked or when a webpage has completed loading.</p>
+                <p>
+                <h4 class="fw-semibold">Example :</h4>
+                    <div id="bubble-form">
+                        <form onclick="alert('form')">FORM
+                            <div onclick="alert('div')">DIV
+                                <p onclick="alert('p')">P</p>
+                            </div>
+                        </form>
+                    </div>
+                </p>
+                <p>A click on the inner 'p' first runs onclick:</p>
+                <ol>
+                    <li>On that 'p'</li>
+                    <li>Then on the outer 'div'</li>
+                    <li>Then on the outer 'form'</li>
+                    <li>And so on upwards till the 'document' object</li>
+                </ol>
             </div>
         </section>
     </main>
