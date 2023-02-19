@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Calculation</title>
+    <script src="https://kit.fontawesome.com/2c9d1eb06d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,7 +19,7 @@
                     <a class="navbar-brand fw-bold fs-2">Interactive</a>
                     <p class="fs-4 text-secondary">Geometry Genius</p>
                 </div>
-                <button id="blogs-btn" class="btn btn-outline-success btn-primary text-white fw-semibold" type="submit">Blog</button>
+                <button id="blogs-btn" class="btn btn-outline-success btn-primary text-white fw-semibold" type="submit">Blogs</button>
             </div>
         </nav>
     </header>
@@ -30,7 +31,7 @@
                     <img src="images/triangle.png" class="card-img-top w-100 m-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Triangle</h5>
-                        <p class="card-text">Area (A) = 0.5 * b * h</p>
+                        <p class="card-text fw-semibold">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark cross-icon"></i> h</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <input id="triangle-base" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2"
@@ -46,7 +47,7 @@
                     <img src="images/rectangle.png" class="card-img-top w-100 m-auto" alt="...">
                     <div class="card-body">
                         <h5 class="Rectangle">Rectangle</h5>
-                        <p class="card-text">Area (A) = w * l</p>
+                        <p class="card-text fw-semibold">Area (A) = w <i class="fa-solid fa-xmark"></i> l</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <input id="rectangle-width" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
@@ -62,7 +63,7 @@
                     <img src="images/parallelogram.png" class="card-img-top w-100 m-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Parallelogram</h5>
-                        <p class="card-text">Area (A) = b * h</p>
+                        <p class="card-text fw-semibold">Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <input id="parallelogram-base" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
@@ -75,7 +76,7 @@
             </div>
             <div class="col order-5 order-md-1">
                 <div class="card">
-                    <div class="card-body overflow-auto">
+                    <div class="card-body overflow-auto ga-display-table">
                         <h5 class="card-title text-decoration-underline text-center">Area Calculation</h5>
                         <table id="area-display" class="table ga-table fs-6">
 
@@ -89,7 +90,7 @@
                     <img src="images/rhombus.png" class="card-img-top w-100 m-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Rhombus</h5>
-                        <p class="card-text">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                        <p class="card-text fw-semibold">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i> d<sub>2</sub></p>
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <input id="rhombus-diagonals-one" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
@@ -105,13 +106,11 @@
                     <img src="images/pentagon.png" class="card-img-top w-75 m-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Pentagon</h5>
-                        <p class="card-text">Area (A) = 0.5 * p * b</p>
+                        <p class="card-text fw-semibold">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
-                        <input id="pentagon-side" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
-                            placeholder="p">cm
-                        <input id="pentagon-apothem" class="bg-dark-subtle border border-0 rounded-1 w-25 ms-2 me-1 ps-2" type="text"
-                            placeholder="b">cm
+                        <p class="me-3">a = <span id="pentagon-side">6</span>cm,</p>
+                        <p>b = <span id="pentagon-apothem">10</span>cm</p>
                     </div>
                     <button id="pentagon-btn" class="btn btn-primary mt-5 fw-semibold">Calculate</button>
                 </div>
@@ -121,13 +120,11 @@
                     <img src="images/ellipse.png" class="card-img-top w-100 m-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Ellipse</h5>
-                        <p class="card-text">Area (A) = &pi;ab</p>
+                        <p class="card-text fw-semibold">Area (A) = &pi;ab</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
-                        <input id="ellipse-a" class="bg-dark-subtle border border-0 rounded-1 w-25 me-1 ps-2" type="text"
-                            placeholder="a">cm
-                        <input id="ellipse-b" class="bg-dark-subtle border border-0 rounded-1 w-25 ms-2 me-1 ps-2" type="text"
-                            placeholder="b">cm
+                        <p class="me-3">a = <span id="ellipse-a">10</span>cm,</p>
+                        <p>b = <span id="ellipse-b">4</span>cm</p>
                     </div>
                     <button id="ellipse-btn" class="btn btn-primary mt-5 fw-semibold">Calculate</button>
                 </div>

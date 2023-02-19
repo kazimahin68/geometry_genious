@@ -1,4 +1,4 @@
-document.getElementById('blogs-btn').addEventListener('click', function(){
+document.getElementById('blogs-btn').addEventListener('click', function () {
     window.location.href = 'blogs.html';
 });
 
@@ -22,10 +22,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
     const name = 'Rectangle';
     const rectangleWidth = getInputValueById('rectangle-width');
     const rectangleLength = getInputValueById('rectangle-length');
-    if (rectangleWidth === ' ' || rectangleLength === ' ') {
-        window.alert("Please Input Value");
-    }
-    else if (isNaN(rectangleWidth) || isNaN(rectangleLength)) {
+    if (isNaN(rectangleWidth) || isNaN(rectangleLength)) {
         window.alert("Please Input Number Value");
     }
     else {
@@ -39,10 +36,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function 
     const name = 'Parallelogram';
     const parallelogramBase = getInputValueById('parallelogram-base');
     const parallelogramHeight = getInputValueById('parallelogram-height');
-    if (parallelogramBase === ' ' || parallelogramHeight === ' ') {
-        window.alert("Please Input Value");
-    }
-    else if (isNaN(parallelogramBase) || isNaN(parallelogramHeight)) {
+    if (isNaN(parallelogramBase) || isNaN(parallelogramHeight)) {
         window.alert("Please Input Number Value");
     }
     else {
@@ -56,10 +50,7 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
     const name = 'Rhombus';
     const rhombusDiagonalsOne = getInputValueById('rhombus-diagonals-one');
     const rhombusDiagonalsTwo = getInputValueById('rhombus-diagonals-two');
-    if (rhombusDiagonalsOne === ' ' || rhombusDiagonalsTwo === ' ') {
-        window.alert("Please Input Value");
-    }
-    else if (isNaN(rhombusDiagonalsOne) || isNaN(rhombusDiagonalsTwo)) {
+    if (isNaN(rhombusDiagonalsOne) || isNaN(rhombusDiagonalsTwo)) {
         window.alert("Please Input Number Value");
     }
     else {
@@ -71,12 +62,9 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
 });
 document.getElementById('pentagon-btn').addEventListener('click', function () {
     const name = 'Pentagon';
-    const pentagonSide = getInputValueById('pentagon-side');
-    const pentagonApothem = getInputValueById('pentagon-apothem');
-    if (pentagonSide === ' ' || pentagonApothem === ' ') {
-        window.alert("Please Input Value");
-    }
-    else if (isNaN(pentagonSide) || isNaN(pentagonApothem)) {
+    const pentagonSide = getElementValueById('pentagon-side');
+    const pentagonApothem = getElementValueById('pentagon-apothem');
+    if (isNaN(pentagonSide) || isNaN(pentagonApothem)) {
         window.alert("Please Input Number Value");
     }
     else {
@@ -88,15 +76,12 @@ document.getElementById('pentagon-btn').addEventListener('click', function () {
 });
 document.getElementById('ellipse-btn').addEventListener('click', function () {
     const name = 'Ellipse';
-    const ellipseA = getInputValueById('ellipse-a');
-    const ellipseB = getInputValueById('ellipse-b');
-    if (ellipseA === ' ' || ellipseB === ' ') {
-        window.alert("Please Input Value");
-    }
-    else if (isNaN(ellipseA) || isNaN(ellipseB)) {
+    const ellipseA = getElementValueById('ellipse-a');
+    const ellipseB = getElementValueById('ellipse-b');
+    if (isNaN(ellipseA) || isNaN(ellipseB)) {
         window.alert("Please Input Number Value");
     }
-    else{
+    else {
         const ellipseArea = 3.1416 * ellipseA * ellipseB;
         const ellipseAreaDisplay = ellipseArea.toFixed(2);
         count += 1;

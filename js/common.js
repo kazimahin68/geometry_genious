@@ -9,10 +9,16 @@ elements.forEach(element => {
   element.addEventListener('mouseenter', changeColor);
 });
 
-function getInputValueById(elementId) {
-    const element = document.getElementById(elementId);
+function getInputValueById(inputFieldId) {
+    const element = document.getElementById(inputFieldId);
     const elementValueString = element.value;
     const value = parseFloat(elementValueString);
     element.value = '';
     return value;
+}
+function getElementValueById(elementId) {
+    const element = document.getElementById(elementId);
+    const elementValueString = element.innerText;
+    const elementValue = parseFloat(elementValueString);
+    return elementValue;
 }

@@ -1,6 +1,10 @@
 .ga-table button {
     background-color: blue;
     white-space: nowrap;
+    padding: 0px 5px;
+}
+.ga-display-table{
+    height: 465px;
 }
 
 .ga-table tr td{
